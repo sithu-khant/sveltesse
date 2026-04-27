@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "words": [
+    "commitlint",
+    "commonmark",
+    "fontsource",
+    "hyoban",
+    "Khant",
+    "oklch",
+    "shadcn",
+    "Sithu",
+    "sithukhant",
+    "sveltesse",
+    "vitesse"
+  ]
+}
