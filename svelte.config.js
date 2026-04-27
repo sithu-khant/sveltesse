@@ -3,10 +3,21 @@ import adapter from '@sveltejs/adapter-cloudflare';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   compilerOptions: {
+    experimental: {
+      async: true
+    },
     // Force runes mode for the project, except for libraries. Can be removed in svelte 6.
     runes: ({ filename }) => filename.split(/[/\\]/).includes('node_modules') ? undefined : true
   },
-  kit: { adapter: adapter() }
+  kit: {
+    experimental: {
+      remoteFunctions: true
+    },
+    adapter: adapter(),
+    alias: {
+      '~': 'src'
+    }
+  }
 };
 
 export default config;
